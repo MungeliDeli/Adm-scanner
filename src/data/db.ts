@@ -16,6 +16,7 @@ export type ScanRecord = {
 type SettingsRecord = {
   id: "settings";
   cug?: string;
+  scannerDebug?: boolean;
 };
 
 interface AdmScannerDb extends DBSchema {
