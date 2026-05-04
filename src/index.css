@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Match Adm frontend dark tokens (dark-only) */
+:root {
+  color-scheme: dark;
+  --bg: 14 17 23; /* #0E1117 */
+  --fg: 226 232 240;
+  --muted: 148 163 184;
+  --card: 26 29 35; /* #1A1D23 */
+  --border: 30 41 59;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+/* Prevent iOS overscroll glow + make taps feel snappy */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
